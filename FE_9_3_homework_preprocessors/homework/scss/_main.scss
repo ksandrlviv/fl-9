@@ -1,0 +1,166 @@
+* {
+    box-sizing: border-box;
+    font-family: $font;
+}
+
+body {
+    padding: 0 10%;
+    background: $bodyBackground;
+}
+
+img {
+    width: 100%;
+    article & {
+        padding: 10px;
+        background: $articleBackground;
+    }
+}
+
+.post-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+article {
+    width: 50%;
+    padding: 5px;
+    div {
+        background: $articleBackground;
+        margin-top: -5px;
+    }
+}
+
+.logo {
+    width: 40%;
+}
+
+h1,
+h4 {
+    color: $headerColor;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+    border-top: 1px $navigationBorder solid;
+    border-bottom: 1px $navigationBorder solid;
+    margin-top: auto;
+    margin-bottom: 3%;
+    a {
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 3%;
+        color: $navigationLink;
+        font-size: 20px;
+    }
+}
+
+.toolbar {
+    display: flex;
+    justify-content: flex-end;
+    margin: 10px 0 10px 0;
+}
+
+input {
+    padding: 10px;
+    border: 1px solid $searchColor;
+    margin: 0 20px 10px 0;
+    background-color: $bodyBackground;
+    &::placeholder {
+        color: $searchColor;
+        font-size: 15px;
+    }
+}
+
+.post-description {
+    border-bottom: 1px $postDescriptionBorder solid;
+    padding: 0 20px 10px 20px;
+    margin: 0 15px 0 15px;
+    color: $postDescriptionColor;
+}
+
+.post-list {
+    padding: 0 15px 0 20px;
+    h3 {
+        color: $postHeader;
+        margin: 5px 0;
+        text-transform: uppercase;
+        text-align: left;
+        padding: 0 15px;
+    }
+    p {
+        text-align: left;
+        padding: 0 15px;
+        line-height: 25px;
+        margin: 0;
+        padding-bottom: 30px;
+        color: $postParagraf;
+    }
+}
+
+.about {
+    margin-top: 80px;
+    h1 {
+        display: flex;
+        justify-content: flex-end;
+        text-transform: uppercase;
+        font-size: 30px;
+        margin: 0;
+    }
+    p {
+        margin: 0 0 20px 0;
+        line-height: 30px;
+        color: $aboutParagraf;
+        font-size: 20px;
+    }
+}
+
+.contact-form {
+    margin-top: 50px;
+    h1,
+    h4 {
+        display: flex;
+        justify-content: flex-end;
+        margin: 0;
+        text-transform: uppercase;
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+        input,
+        textarea {
+            width: 100%;
+            border-color: $formInputColor;
+            &::placeholder {
+                color: $formInputColor;
+                font-size: 15px;
+            }
+        }
+        textarea {
+            height: 100px;
+            padding: 10px;
+            background-color: $bodyBackground;
+        }
+        button {
+            width: 20%;
+            margin-left: auto;
+            height: 30px;
+            color: $buttonText;
+            background-color: $buttonBackground;
+            border: none;
+        }
+    }
+    h4 {
+        margin-bottom: 25px;
+    }
+}
+
+footer {
+    color: $footer;
+}

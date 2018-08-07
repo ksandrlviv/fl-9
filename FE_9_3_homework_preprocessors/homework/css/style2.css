@@ -1,0 +1,136 @@
+* {
+  box-sizing: border-box;
+  font-family: "Times New Roman", serif; }
+
+body {
+  padding: 0 10%;
+  background: #efefef; }
+
+img {
+  width: 100%; }
+  article img {
+    padding: 10px;
+    background: white; }
+
+.post-list {
+  display: flex;
+  flex-wrap: wrap; }
+
+article {
+  width: 50%;
+  padding: 5px; }
+  article div {
+    background: white;
+    margin-top: -5px; }
+
+.logo {
+  width: 40%; }
+
+h1,
+h4 {
+  color: #fc5830; }
+
+header {
+  display: flex;
+  flex-direction: row; }
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  width: 60%;
+  border-top: 1px lightgrey solid;
+  border-bottom: 1px lightgrey solid;
+  margin-top: auto;
+  margin-bottom: 3%; }
+  nav a {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 3%;
+    color: #fc5830;
+    font-size: 20px; }
+
+.toolbar {
+  display: flex;
+  justify-content: flex-end;
+  margin: 10px 0 10px 0; }
+
+input {
+  padding: 10px;
+  border: 1px solid #fc5830;
+  margin: 0 20px 10px 0;
+  background-color: #efefef; }
+  input::placeholder {
+    color: #fc5830;
+    font-size: 15px; }
+
+.post-description {
+  border-bottom: 1px #bdbfce solid;
+  padding: 0 20px 10px 20px;
+  margin: 0 15px 0 15px;
+  color: #bdbfce; }
+
+.post-list {
+  padding: 0 15px 0 20px; }
+  .post-list h3 {
+    color: #617d8a;
+    margin: 5px 0;
+    text-transform: uppercase;
+    text-align: left;
+    padding: 0 15px; }
+  .post-list p {
+    text-align: left;
+    padding: 0 15px;
+    line-height: 25px;
+    margin: 0;
+    padding-bottom: 30px;
+    color: #617d8a; }
+
+.about {
+  margin-top: 80px; }
+  .about h1 {
+    display: flex;
+    justify-content: flex-end;
+    text-transform: uppercase;
+    font-size: 30px;
+    margin: 0; }
+  .about p {
+    margin: 0 0 20px 0;
+    line-height: 30px;
+    color: #617d8a;
+    font-size: 20px; }
+
+.contact-form {
+  margin-top: 50px; }
+  .contact-form h1,
+  .contact-form h4 {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+    text-transform: uppercase; }
+  .contact-form form {
+    display: flex;
+    flex-direction: column; }
+    .contact-form form input,
+    .contact-form form textarea {
+      width: 100%;
+      border-color: grey; }
+      .contact-form form input::placeholder,
+      .contact-form form textarea::placeholder {
+        color: grey;
+        font-size: 15px; }
+    .contact-form form textarea {
+      height: 100px;
+      padding: 10px;
+      background-color: #efefef; }
+    .contact-form form button {
+      width: 20%;
+      margin-left: auto;
+      height: 30px;
+      color: white;
+      background-color: #fc5830;
+      border: none; }
+  .contact-form h4 {
+    margin-bottom: 25px; }
+
+footer {
+  color: grey; }
