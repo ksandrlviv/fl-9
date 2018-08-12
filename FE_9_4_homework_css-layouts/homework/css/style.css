@@ -1,0 +1,258 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h2,
+h3,
+h4 {
+    font-weight: normal;
+}
+
+header img {
+    width: 100%;
+}
+
+header {
+    position: relative;
+    color: white;
+}
+
+.wrap {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 20px;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.wrap p {
+    letter-spacing: 0.1em;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px;
+}
+
+nav {
+    display: flex;
+    width: 30%;
+    justify-content: space-around;
+    padding-top: 30px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.navigation p {
+    padding-top: 30px;
+    margin: 0;
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: normal;
+    letter-spacing: 0.2em;
+    text-align: center;
+    margin-top: 15%;
+    margin-bottom: 0%;
+}
+
+h1 span {
+    font-size: 84px;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.logo p {
+    text-align: center;
+}
+
+header button {
+    margin-left: 50%;
+    width: 200px;
+    height: 50px;
+    background: #3b3d3e;
+    color: white;
+    border: 1px solid white;
+    transform: translateX(-100px);
+    margin-top: auto;
+    margin-bottom: 75px;
+}
+
+.info {
+    display: flex;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    background-color: #d3d3d3;
+    padding: 40px;
+}
+
+.content article {
+    display: flex;
+    align-items: center;
+}
+
+.content .watermark {
+    width: 65%;
+}
+
+.content img {
+    width: 100%;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.content h3 {
+    display: inline-block;
+    width: 35%;
+}
+
+.content>h2 {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 70px;
+}
+
+.subscrible {
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+}
+
+.subscrible input {
+    flex-grow: 1;
+    margin-left: 10px;
+    height: 40px;
+    background-color: #d3d3d3;
+    border: 1px solid gray;
+}
+
+.subscrible input::placeholder {
+    padding-left: 20px;
+    color: black;
+}
+
+
+.subscrible button {
+    height: 40px;
+    background: black;
+    color: white;
+    border: 1px solid black;
+}
+
+.bottom {
+    display: flex;
+    margin: 0 20px;
+}
+
+.bottom article {
+    flex-grow: 1;
+    flex-basis: 25%;
+    padding-right: 15px;
+    padding-bottom: 50px;
+}
+
+.bottom article:last-child {
+    padding-right: 0;
+}
+
+.bottom p {
+    color: grey;
+}
+
+.bottom h3 {
+    font-weight: bold;
+}
+
+.contacts p {
+    margin: 0;
+}
+
+.bottom .subscrible {
+    padding: 0;
+}
+
+.bottom .subscrible input {
+    margin: 0;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    border-top: 2px solid lightgrey;
+    margin: 0 20px;
+}
+
+footer nav,
+footer p {
+    margin: 16px 0;
+    padding: 0;
+}
+
+footer nav a {
+    color: black;
+}
+
+.watermark {
+    position: relative;
+    color: white;
+}
+
+.watermark button {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    height: 25px;
+    background: grey;
+    color: white;
+    border: 1px solid white;
+}
+
+.watermark p {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+}
+
+.info h2 {
+    padding-right: 20px;
+    flex-basis: 50%;
+    flex-shrink: 0;
+}
+
+article:nth-child(even) h3 {
+    padding-left: 20px;
+}
+
+article:nth-child(odd) h3 {
+    padding-right: 20px;
+}
+.italic {
+	font-style: italic;
+}
+article .tweet-time {
+	color: lightgrey;
+}
+footer p{
+	color: lightgrey;
+}
